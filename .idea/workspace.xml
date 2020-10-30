@@ -20,18 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca1f590e-afb7-4c04-b549-fe3344070925" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/mastering-go.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funFunc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proxy.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/returnFuctions.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/returnNames.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/signals.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customtags/custom_tags.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customtags/sample.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customtags/validators.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httptimeout/NetworkCall.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,13 +55,15 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
-  <component name="RunManager" selected="Go Build.go build porxy.go">
-    <configuration name="go build funFunc.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build github.com/giddykb/mastering-go/customtags">
+    <configuration name="go build NetworkCall.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="mastering-go" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/funFunc.go" />
+      <filePath value="$PROJECT_DIR$/httptimeout/NetworkCall.go" />
+      <package value="github.com/giddykb/mastering-go" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
@@ -81,6 +76,24 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build github.com/giddykb/mastering-go/customtags" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="mastering-go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/customtags/custom_tags.go" />
+      <package value="github.com/giddykb/mastering-go/customtags" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/giddykb/mastering-go/httptimeout" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="mastering-go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/httptimeout/NetworkCall.go" />
+      <package value="github.com/giddykb/mastering-go/httptimeout" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build porxy.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="mastering-go" />
       <working_directory value="$PROJECT_DIR$" />
@@ -89,29 +102,13 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build returnFuctions.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="mastering-go" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/returnFuctions.go" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build returnNames.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="mastering-go" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/returnNames.go" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build github.com/giddykb/mastering-go/customtags" />
+        <item itemvalue="Go Build.go build NetworkCall.go" />
+        <item itemvalue="Go Build.go build github.com/giddykb/mastering-go/httptimeout" />
         <item itemvalue="Go Build.go build porxy.go" />
         <item itemvalue="Go Build.go build github.com/giddykb/mastering-go" />
-        <item itemvalue="Go Build.go build funFunc.go" />
-        <item itemvalue="Go Build.go build returnFuctions.go" />
-        <item itemvalue="Go Build.go build returnNames.go" />
       </list>
     </recent_temporary>
   </component>
@@ -143,37 +140,69 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="451" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1601964742218" />
-    <state width="1398" height="304" key="GridCell.Tab.0.bottom" timestamp="1601978840893">
+    <state width="411" height="466" key="DebuggerActiveHint" timestamp="1604051358742">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601978840893" />
-    <state width="1398" height="304" key="GridCell.Tab.0.center" timestamp="1601978840892">
+    <state width="411" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1604051358742" />
+    <state x="372" y="235" key="EditFileWatcherDialog" timestamp="1604049035434">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601978840892" />
-    <state width="1398" height="304" key="GridCell.Tab.0.left" timestamp="1601978840891">
+    <state x="372" y="235" key="EditFileWatcherDialog/0.0.1440.900@0.0.1440.900" timestamp="1604049035434" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1604051582868">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601978840891" />
-    <state width="1398" height="304" key="GridCell.Tab.0.right" timestamp="1601978840892">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604051582868" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1604051582867">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601978840892" />
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1601978840895">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1604051582867" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1604051582866">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601978840895" />
-    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1601978840894">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1604051582866" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1604051582867">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1601978840894" />
-    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1601978840893">
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1604051582867" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1604051535794">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1601978840893" />
-    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1601978840894">
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604051535794" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1604051535793">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1601978840894" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1604051535793" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1604051535792">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1604051535792" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1604051535793">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1604051535793" />
+    <state x="221" y="89" key="SettingsEditor" timestamp="1604049038405">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1604049038405" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1604049017630">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1604049017630" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/customtags/validators.go</url>
+          <line>99</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/customtags/validators.go</url>
+          <line>51</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

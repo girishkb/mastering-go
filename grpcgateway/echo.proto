@@ -1,0 +1,19 @@
+syntax = "proto3";
+package grpcgateway.v1;
+
+option go_package = ".;grpcgateway";
+
+
+message EchoRequest {
+  string value = 1;
+}
+
+message EchoResponse {
+  string value = 1;
+}
+
+service EchoAPI {
+  rpc Echo(EchoRequest) returns (EchoResponse);
+}
+
+

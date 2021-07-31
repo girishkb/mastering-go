@@ -20,11 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca1f590e-afb7-4c04-b549-fe3344070925" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/customtags/custom_tags.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customtags/sample.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customtags/validators.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/httptimeout/NetworkCall.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/channels/wg.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/concurrency/pipeline.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/concurrency/pipeline_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workerpool/pool.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workerpool/worker_pool.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funFunc.go" beforeDir="false" afterPath="$PROJECT_DIR$/temp/funFunc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.go" beforeDir="false" afterPath="$PROJECT_DIR$/temp/functions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/returnFuctions.go" beforeDir="false" afterPath="$PROJECT_DIR$/temp/returnFuctions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/returnNames.go" beforeDir="false" afterPath="$PROJECT_DIR$/temp/returnNames.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signals.go" beforeDir="false" afterPath="$PROJECT_DIR$/temp/signals.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +44,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="/usr/local/Cellar/go/1.14.6/libexec" />
+  <component name="GOROOT" url="file:///usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -50,6 +56,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
@@ -57,58 +64,69 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
-  <component name="RunManager" selected="Go Build.go build github.com/giddykb/mastering-go/customtags">
-    <configuration name="go build NetworkCall.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="mastering-go" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/httptimeout/NetworkCall.go" />
-      <package value="github.com/giddykb/mastering-go" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/temp" />
+      <recent name="$PROJECT_DIR$/workerpool" />
+      <recent name="$PROJECT_DIR$/httptimeout" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Test.BenchmarkWithoutPipelineModule in github.com/giddykb/mastering-go/concurrency">
     <configuration name="go build github.com/giddykb/mastering-go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="mastering-go" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/porxy.go" />
       <package value="github.com/giddykb/mastering-go" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/porxy.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/giddykb/mastering-go/channels" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="mastering-go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/giddykb/mastering-go/channels" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/channels/buffered.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build github.com/giddykb/mastering-go/customtags" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="mastering-go" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/customtags/custom_tags.go" />
       <package value="github.com/giddykb/mastering-go/customtags" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/customtags/custom_tags.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build github.com/giddykb/mastering-go/httptimeout" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build github.com/giddykb/mastering-go/workerpool" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="mastering-go" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/httptimeout/NetworkCall.go" />
-      <package value="github.com/giddykb/mastering-go/httptimeout" />
+      <package value="github.com/giddykb/mastering-go/workerpool" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/workerpool/pool.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build porxy.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="BenchmarkWithoutPipelineModule in github.com/giddykb/mastering-go/concurrency" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="mastering-go" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/porxy.go" />
+      <working_directory value="$PROJECT_DIR$/concurrency" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/giddykb/mastering-go/concurrency" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gobench" />
+      <pattern value="^\QBenchmarkWithoutPipelineModule\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build github.com/giddykb/mastering-go/customtags" />
-        <item itemvalue="Go Build.go build NetworkCall.go" />
-        <item itemvalue="Go Build.go build github.com/giddykb/mastering-go/httptimeout" />
-        <item itemvalue="Go Build.go build porxy.go" />
+        <item itemvalue="Go Test.BenchmarkWithoutPipelineModule in github.com/giddykb/mastering-go/concurrency" />
+        <item itemvalue="Go Build.go build github.com/giddykb/mastering-go/workerpool" />
         <item itemvalue="Go Build.go build github.com/giddykb/mastering-go" />
+        <item itemvalue="Go Build.go build github.com/giddykb/mastering-go/channels" />
+        <item itemvalue="Go Build.go build github.com/giddykb/mastering-go/customtags" />
       </list>
     </recent_temporary>
   </component>
@@ -130,64 +148,6 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="520" y="290" key="#Go_Modules" timestamp="1601104456003">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="520" y="290" key="#Go_Modules/0.0.1440.900@0.0.1440.900" timestamp="1601104456003" />
-    <state x="451" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601964742218">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="451" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1601964742218" />
-    <state width="411" height="466" key="DebuggerActiveHint" timestamp="1604051358742">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="411" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1604051358742" />
-    <state x="372" y="235" key="EditFileWatcherDialog" timestamp="1604049035434">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="372" y="235" key="EditFileWatcherDialog/0.0.1440.900@0.0.1440.900" timestamp="1604049035434" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1604051582868">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604051582868" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1604051582867">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1604051582867" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1604051582866">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1604051582866" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1604051582867">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1604051582867" />
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1604051535794">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604051535794" />
-    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1604051535793">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1604051535793" />
-    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1604051535792">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1604051535792" />
-    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1604051535793">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1604051535793" />
-    <state x="221" y="89" key="SettingsEditor" timestamp="1604049038405">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1604049038405" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1604049017630">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1604049017630" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

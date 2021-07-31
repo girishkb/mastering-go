@@ -1,0 +1,21 @@
+syntax = "proto3";
+package grpcgateway.v1;
+
+option go_package = ".;grpcgateway";
+
+
+import "google/api/annotations.proto";
+import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
+
+message StatusResponse {
+  google.protobuf.Timestamp current_time = 1;
+}
+service MyService {
+  rpc Status(google.protobuf.Empty)
+      returns (StatusResponse) {
+    option (google.api.http) = {
+      get: "/status"
+    };
+  }
+}
